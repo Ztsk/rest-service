@@ -13,6 +13,6 @@ public class GreetingsController {
 
     @GetMapping("/greeting")
     public Greetings greetings (@RequestParam(value = "name", defaultValue = "World")String name) {
-        return new Greetings(counter.incrementAndGet(), String.format(template,name));
+        return new Greetings(counter.incrementAndGet(), "Wojna Grzechu", 2006,"Richard A. Knaak", "Fantasy");
     }
 }
